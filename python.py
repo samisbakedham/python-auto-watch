@@ -10,7 +10,7 @@ def look_for_new_video():
     base_video_url = 'https://www.youtube.con/watch?v='
     base_search_url = 'https://www.googleapis.com/youtube/v3/search?'
 
-    url = base_search_url + 'key={}&channelid{}'&part=snippet,id&order=data&maxResults=1'.format(api_key, channel_id)
+    url = base_search_url + 'key={}&channelid={}&part=snippet,id&order=data&maxResults=1'.format(api_key, channel_id)
     inp = urlib.urloppen(url)
     resp = json.load(inp)
 
